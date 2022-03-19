@@ -1,0 +1,28 @@
+@import "sass/abstracts/mixins";
+@import "sass/abstracts/variables";
+@import "sass/abstracts/functions";
+
+@import "sass/base/base.scss";
+@import "sass/base/animations";
+@import "sass/base/typeography";
+@import "sass/base/utilities";
+
+@import "sass/layout/header"; 
+@import "sass/layout/grid";
+@import "sass/layout/footer";
+@import "sass/layout/navigation";
+
+@import "sass/components/button";
+@import "sass/components/composition";
+@import "sass/components/amenity-box";
+@import "sass/components/bg-video";
+@import "sass/components/testimonial";
+@import "sass/components/plan";
+@import "sass/components/contact";
+@import "sass/components/form";
+
+@import "sass/pages/home";
+
+
+
+

@@ -1,0 +1,120 @@
+.composition {
+		position:relative;
+		margin-left:5rem;
+		margin-top:3rem;
+
+		@include respond(tab-port) {
+			margin:8rem auto 0;
+			position:absolute;
+			
+
+		}
+		
+
+	&__img {
+		width:45%;
+		box-shadow:0 1.5rem 4rem rgba($black, .4);
+		border-radius:2px;
+		position:absolute;
+		z-index:10;
+		outline-offset:1.5rem;
+		transition:all .2s;
+
+		@include respond(tab-port) {
+			height:15rem;
+			width:30%;
+			position:relative;
+			
+
+
+		}
+
+		&--1 {
+			width:45%;
+			left: -2rem;
+			top: -2rem;
+			position:absolute;
+			box-shadow:0 1.5rem 4rem rgba($black, .6);
+
+			&:hover {
+			transform:scale(1.05) translate(-.5rem);
+			box-shadow:0 1.75rem 5rem rgba($black, .6);
+			z-index:20;
+			outline:1.5rem solid $primary-dark;
+			outline-offset:1.5rem;
+			transition:all .5s;
+			}
+			&:hover &:__img:not(:hover) {
+			transform:scale(0.9);
+
+			@include respond(tab-port) {
+				left:0;
+				top:0;
+				
+
+			}
+		}
+			
+		}
+		&--2 {
+			width: 45%;
+			left: 6rem;
+			top: 6rem;
+			position:absolute;
+			box-shadow:0 1.5rem 4rem rgba($black, .6);
+
+			&:hover {
+			transform:scale(1.05) translate(-.5rem);
+			box-shadow:0 1.75rem 5rem rgba($black, .6);
+			z-index:20;
+			outline:1.5rem solid $primary-dark;
+			outline-offset:1.5rem;
+			transition:all .5s;
+
+			@include respond(tab-port) {
+				left:0;
+				top:0;
+				
+			}
+		}
+			&:hover &:__img:not(:hover) {
+			transform:scale(0.9);
+			}
+		}
+
+		&--3 {
+			width:45%;
+			left: 15rem;
+			top: 15rem;
+			position:absolute;
+			box-shadow:0 1.5rem 4rem rgba($black, .6);
+
+			&:hover {
+			transform:scale(1.05) translate(-.5rem);
+			box-shadow:0 1.75rem 5rem rgba($black, .6);
+			z-index:20;
+
+			outline:1.5rem solid $primary-dark;
+			outline-offset:1.5rem;
+			transition:all .5s;
+
+			@include respond(tab-port) {
+				left:0;
+				top:0;
+
+			}
+		}
+
+			&:hover {
+			transform:scale(1.05) translateY(-.5rem);
+			box-shadow:0 1.75rem 5rem rgba($black, .5);
+			z-index:20;
+			}
+
+			&:hover &:__img:not(:hover) {
+			transform:scale(0.9); 
+			}
+		}
+		
+	}
+}
